@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "42545c84-3ed5-4ca7-a280-bd7e7bb8e986",
+		"_postman_id": "0f159281-3c99-41ac-8840-86b170cd6c24",
 		"name": "Petstore Copy 2",
 		"description": "This is a sample Pet Store Server based on the OpenAPI 3.0 specification. You can find out more about  \nSwagger at [http://swagger.io](http://swagger.io). In the third iteration of the pet store, we've switched to the design first approach!  \nYou can now help us improve the API whether it's by making changes to the definition itself or to the code.  \nThat way, with time, we can improve the API in general, and expose some of the new features in OAS3.\n\nSome useful links:\n\n- [The Pet Store repository](https://github.com/swagger-api/swagger-petstore)\n    \n- [The source API definition for the Pet Store](https://github.com/swagger-api/swagger-petstore/blob/master/src/main/resources/openapi.yaml)\n    \n\nContact Support:  \nEmail: [apiteam@swagger.io](https://mailto:apiteam@swagger.io)",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "20774014"
+		"_uid": "36848714-0f159281-3c99-41ac-8840-86b170cd6c24"
 	},
 	"item": [
 		{
@@ -15,6 +15,10 @@
 					"item": [
 						{
 							"name": "uploads an image",
+							"id": "7ce1e221-1340-4af5-9b88-25db490cf46a",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
 							"request": {
 								"auth": {
 									"type": "inherit"
@@ -35,7 +39,7 @@
 									"file": {}
 								},
 								"url": {
-									"raw": "https://{{apiServer}}/api/pet/:petId/uploadImage?additionalMetadata=<string>",
+									"raw": "https://{{apiServer}}/api/pet/:petId/uploadImage?additionalMetadata=<string>--",
 									"protocol": "https",
 									"host": [
 										"{{apiServer}}"
@@ -49,7 +53,7 @@
 									"query": [
 										{
 											"key": "additionalMetadata",
-											"value": "<string>"
+											"value": "<string>--"
 										}
 									],
 									"variable": [
@@ -62,6 +66,7 @@
 							},
 							"response": [
 								{
+									"id": "6256ee74-f6ea-41a6-b0c1-2559c57d8cfb",
 									"name": "successful operation",
 									"originalRequest": {
 										"method": "POST",
@@ -122,13 +127,18 @@
 								}
 							]
 						}
-					]
+					],
+					"id": "0cbabed1-62cd-431f-9670-6ac0c0971ec8"
 				},
 				{
 					"name": "Find pet by ID",
 					"item": [
 						{
 							"name": "Find pet by ID",
+							"id": "7156f09d-6435-4ec3-828c-4d9883bda524",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
 							"request": {
 								"auth": {
 									"type": "inherit"
@@ -161,6 +171,7 @@
 							},
 							"response": [
 								{
+									"id": "84c14d26-8722-45b9-a9ef-20cf621b07eb",
 									"name": "successful operation",
 									"originalRequest": {
 										"method": "GET",
@@ -204,6 +215,7 @@
 									"body": "{\n  \"name\": \"<string>\",\n  \"photoUrls\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"id\": \"<long>\",\n  \"category\": {\n    \"id\": \"<long>\",\n    \"name\": \"<string>\"\n  },\n  \"tags\": [\n    {\n      \"id\": \"<long>\",\n      \"name\": \"<string>\"\n    },\n    {\n      \"id\": \"<long>\",\n      \"name\": \"<string>\"\n    }\n  ],\n  \"status\": \"available\"\n}"
 								},
 								{
+									"id": "8202f408-585e-435e-9c1f-6f421f4e486a",
 									"name": "Invalid ID supplied",
 									"originalRequest": {
 										"method": "GET",
@@ -238,6 +250,7 @@
 									"body": ""
 								},
 								{
+									"id": "301a08f8-f5db-4ca6-8d8f-82a46ef937a8",
 									"name": "Pet not found",
 									"originalRequest": {
 										"method": "GET",
@@ -273,13 +286,18 @@
 								}
 							]
 						}
-					]
+					],
+					"id": "0ae57759-0883-45ab-b82e-96e6964c15fb"
 				},
 				{
 					"name": "Updates a pet in the store with form data",
 					"item": [
 						{
 							"name": "Updates a pet in the store with form data",
+							"id": "39c06f7e-b88d-47de-8acb-8b02b0720b1a",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
 							"request": {
 								"auth": {
 									"type": "inherit"
@@ -318,6 +336,7 @@
 							},
 							"response": [
 								{
+									"id": "cf834763-d03d-4e1e-9192-e4af5cdfd52d",
 									"name": "Invalid input",
 									"originalRequest": {
 										"method": "POST",
@@ -365,13 +384,18 @@
 								}
 							]
 						}
-					]
+					],
+					"id": "76c2e61f-7f0d-480f-8545-7adf28f8b498"
 				},
 				{
 					"name": "Deletes a pet",
 					"item": [
 						{
 							"name": "Deletes a pet",
+							"id": "33472288-8e3e-413e-a43f-0439f4460074",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
 							"request": {
 								"auth": {
 									"type": "inherit"
@@ -404,6 +428,7 @@
 							},
 							"response": [
 								{
+									"id": "87fc3b81-8ea3-4fcf-95a7-90b2d3b0d6d1",
 									"name": "Invalid pet value",
 									"originalRequest": {
 										"method": "DELETE",
@@ -443,13 +468,18 @@
 								}
 							]
 						}
-					]
+					],
+					"id": "e5c655b8-3fb2-4d62-afef-51c28ec94314"
 				},
 				{
 					"name": "Add a new pet to the store",
 					"item": [
 						{
 							"name": "Add a new pet to the store",
+							"id": "0a90584e-7c38-4ce9-86ca-f84352f90688",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
 							"request": {
 								"auth": {
 									"type": "inherit"
@@ -490,6 +520,7 @@
 							},
 							"response": [
 								{
+									"id": "9809966b-bf47-4e19-9f4e-238bc5efc5b3",
 									"name": "Successful operation",
 									"originalRequest": {
 										"method": "POST",
@@ -541,6 +572,7 @@
 									"body": "{\n  \"name\": \"<string>\",\n  \"photoUrls\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"id\": \"<long>\",\n  \"category\": {\n    \"id\": \"<long>\",\n    \"name\": \"<string>\"\n  },\n  \"tags\": [\n    {\n      \"id\": \"<long>\",\n      \"name\": \"<string>\"\n    },\n    {\n      \"id\": \"<long>\",\n      \"name\": \"<string>\"\n    }\n  ],\n  \"status\": \"available\"\n}"
 								},
 								{
+									"id": "5b119971-5ee7-4210-838c-c3da602fc30d",
 									"name": "Invalid input",
 									"originalRequest": {
 										"method": "POST",
@@ -584,13 +616,18 @@
 								}
 							]
 						}
-					]
+					],
+					"id": "ed93626e-4df6-49f4-b9e2-4f72f76962d6"
 				},
 				{
 					"name": "Update an existing pet",
 					"item": [
 						{
 							"name": "Update an existing pet",
+							"id": "bc2f3280-c21d-4fba-9220-4cc68e1f714d",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
 							"request": {
 								"auth": {
 									"type": "inherit"
@@ -631,6 +668,7 @@
 							},
 							"response": [
 								{
+									"id": "d80c4b2c-b138-420e-a592-b338d8dce3d9",
 									"name": "Successful operation",
 									"originalRequest": {
 										"method": "PUT",
@@ -682,6 +720,7 @@
 									"body": "{\n  \"name\": \"<string>\",\n  \"photoUrls\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"id\": \"<long>\",\n  \"category\": {\n    \"id\": \"<long>\",\n    \"name\": \"<string>\"\n  },\n  \"tags\": [\n    {\n      \"id\": \"<long>\",\n      \"name\": \"<string>\"\n    },\n    {\n      \"id\": \"<long>\",\n      \"name\": \"<string>\"\n    }\n  ],\n  \"status\": \"available\"\n}"
 								},
 								{
+									"id": "103143bf-2023-4d27-838a-e93432d03f08",
 									"name": "Invalid ID supplied",
 									"originalRequest": {
 										"method": "PUT",
@@ -724,6 +763,7 @@
 									"body": ""
 								},
 								{
+									"id": "edd9ef9a-3da0-4cef-a45c-6cf14e6dc4b4",
 									"name": "Pet not found",
 									"originalRequest": {
 										"method": "PUT",
@@ -766,6 +806,7 @@
 									"body": ""
 								},
 								{
+									"id": "7899c60e-f114-41b1-9926-b6df5875a785",
 									"name": "Validation exception",
 									"originalRequest": {
 										"method": "PUT",
@@ -809,13 +850,18 @@
 								}
 							]
 						}
-					]
+					],
+					"id": "1182301d-3f35-4379-9baf-8a343d10056f"
 				},
 				{
 					"name": "Returns pet inventories by status",
 					"item": [
 						{
 							"name": "Returns pet inventories by status",
+							"id": "2867d0dc-a437-44e3-84b8-14e0af7958a1",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
 							"request": {
 								"auth": {
 									"type": "inherit"
@@ -843,6 +889,7 @@
 							},
 							"response": [
 								{
+									"id": "39664b07-6d01-4600-8ce9-c461ab460eca",
 									"name": "successful operation",
 									"originalRequest": {
 										"method": "GET",
@@ -882,13 +929,18 @@
 								}
 							]
 						}
-					]
+					],
+					"id": "32b4005c-8fe1-46ae-854b-65a793d9e793"
 				},
 				{
 					"name": "Find purchase order by ID",
 					"item": [
 						{
 							"name": "Find purchase order by ID",
+							"id": "76938487-534b-4ba8-847e-856fbb6c518c",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
 							"request": {
 								"auth": {
 									"type": "inherit"
@@ -922,6 +974,7 @@
 							},
 							"response": [
 								{
+									"id": "dc2f8f4c-19ec-498f-b4c0-8fcf295dd751",
 									"name": "successful operation",
 									"originalRequest": {
 										"method": "GET",
@@ -961,6 +1014,7 @@
 									"body": "{\n  \"id\": \"<long>\",\n  \"petId\": \"<long>\",\n  \"quantity\": \"<integer>\",\n  \"shipDate\": \"<dateTime>\",\n  \"status\": \"approved\",\n  \"complete\": \"<boolean>\"\n}"
 								},
 								{
+									"id": "77a01642-0d24-4a1c-b818-05bc2079d7ff",
 									"name": "Invalid ID supplied",
 									"originalRequest": {
 										"method": "GET",
@@ -990,6 +1044,7 @@
 									"body": ""
 								},
 								{
+									"id": "2da624c0-1609-42cd-ad55-9ae168d28339",
 									"name": "Order not found",
 									"originalRequest": {
 										"method": "GET",
@@ -1020,13 +1075,18 @@
 								}
 							]
 						}
-					]
+					],
+					"id": "70783617-b3d7-4a70-bfcd-e12ac5c916fa"
 				},
 				{
 					"name": "Delete purchase order by ID",
 					"item": [
 						{
 							"name": "Delete purchase order by ID",
+							"id": "e1223f1a-a292-4b9d-a05d-c15806d2e417",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
 							"request": {
 								"auth": {
 									"type": "inherit"
@@ -1055,6 +1115,7 @@
 							},
 							"response": [
 								{
+									"id": "71705746-d717-457f-b3d7-d9b49eebfad8",
 									"name": "Invalid ID supplied",
 									"originalRequest": {
 										"method": "DELETE",
@@ -1084,6 +1145,7 @@
 									"body": ""
 								},
 								{
+									"id": "c71ccaf9-3053-4c8d-8ed4-a52ddcd71ed4",
 									"name": "Order not found",
 									"originalRequest": {
 										"method": "DELETE",
@@ -1114,13 +1176,18 @@
 								}
 							]
 						}
-					]
+					],
+					"id": "d2d29296-6049-4254-800e-309dbaeade7f"
 				},
 				{
 					"name": "Place an order for a pet",
 					"item": [
 						{
 							"name": "Place an order for a pet",
+							"id": "59156e18-e955-45ce-b74c-0d7e31b1bd66",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
 							"request": {
 								"auth": {
 									"type": "inherit"
@@ -1162,6 +1229,7 @@
 							},
 							"response": [
 								{
+									"id": "65014455-9a16-42b0-bba5-f0d0c95dd258",
 									"name": "successful operation",
 									"originalRequest": {
 										"method": "POST",
@@ -1209,6 +1277,7 @@
 									"body": "{\n  \"id\": \"<long>\",\n  \"petId\": \"<long>\",\n  \"quantity\": \"<integer>\",\n  \"shipDate\": \"<dateTime>\",\n  \"status\": \"approved\",\n  \"complete\": \"<boolean>\"\n}"
 								},
 								{
+									"id": "8768510d-bb47-49cf-a73c-4a5b55d0df7a",
 									"name": "Invalid input",
 									"originalRequest": {
 										"method": "POST",
@@ -1248,13 +1317,18 @@
 								}
 							]
 						}
-					]
+					],
+					"id": "6f3cafee-fa4c-4fc4-acd9-21aa2462bf29"
 				},
 				{
 					"name": "Creates list of users with given input array",
 					"item": [
 						{
 							"name": "Creates list of users with given input array",
+							"id": "413281f6-f223-4ee2-aeec-84594e3c1b31",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
 							"request": {
 								"auth": {
 									"type": "inherit"
@@ -1296,6 +1370,7 @@
 							},
 							"response": [
 								{
+									"id": "87a37102-725a-4677-92b3-c1e02ee463e2",
 									"name": "Successful operation",
 									"originalRequest": {
 										"method": "POST",
@@ -1343,6 +1418,7 @@
 									"body": "{\n  \"id\": \"<long>\",\n  \"username\": \"<string>\",\n  \"firstName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"email\": \"<string>\",\n  \"password\": \"<string>\",\n  \"phone\": \"<string>\",\n  \"userStatus\": \"<integer>\"\n}"
 								},
 								{
+									"id": "95a89b17-7d74-412f-9dfb-887fa28f787b",
 									"name": "successful operation",
 									"originalRequest": {
 										"method": "POST",
@@ -1382,13 +1458,18 @@
 								}
 							]
 						}
-					]
+					],
+					"id": "dc459e8a-63aa-444b-b6ca-655744a3e5e0"
 				},
 				{
 					"name": "Logs user into the system",
 					"item": [
 						{
 							"name": "Logs user into the system",
+							"id": "88e6e8aa-2d0e-4110-a344-90472c57c59c",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
 							"request": {
 								"auth": {
 									"type": "inherit"
@@ -1427,6 +1508,7 @@
 							},
 							"response": [
 								{
+									"id": "5a1569e7-2b9c-4c87-b54d-52299b6cbfa2",
 									"name": "successful operation",
 									"originalRequest": {
 										"method": "GET",
@@ -1488,6 +1570,7 @@
 									"body": "<string>"
 								},
 								{
+									"id": "c884f469-75f8-4ee8-9ecc-c68de6601fef",
 									"name": "Invalid username/password supplied",
 									"originalRequest": {
 										"method": "GET",
@@ -1524,13 +1607,18 @@
 								}
 							]
 						}
-					]
+					],
+					"id": "c995acb1-b52f-46a9-b2b8-0d347da89beb"
 				},
 				{
 					"name": "Logs out current logged in user session",
 					"item": [
 						{
 							"name": "Logs out current logged in user session",
+							"id": "d94e5631-1625-4204-87b9-cc2d34be4d24",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
 							"request": {
 								"auth": {
 									"type": "inherit"
@@ -1552,6 +1640,7 @@
 							},
 							"response": [
 								{
+									"id": "eae15f43-e704-4845-a59e-f28cf4e9c04d",
 									"name": "successful operation",
 									"originalRequest": {
 										"method": "GET",
@@ -1576,7 +1665,8 @@
 								}
 							]
 						}
-					]
+					],
+					"id": "4e73ae50-ca35-40aa-ac99-01643c2f8bd5"
 				},
 				{
 					"name": "Get user by user name",
@@ -1634,10 +1724,15 @@
 											""
 										],
 										"type": "text/javascript",
-										"packages": {}
+										"packages": {},
+										"id": "d930c5a9-186e-4c8a-a4d5-f825e239016a"
 									}
 								}
 							],
+							"id": "f1295aa4-3854-4e02-9a95-c8fb674516fe",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
 							"request": {
 								"auth": {
 									"type": "inherit"
@@ -1665,6 +1760,7 @@
 							},
 							"response": [
 								{
+									"id": "cca5d4bf-6263-4ab9-9bd0-0f44560a9f67",
 									"name": "successful operation",
 									"originalRequest": {
 										"method": "GET",
@@ -1703,6 +1799,7 @@
 									"body": "{\n  \"id\": \"<long>\",\n  \"username\": \"<string>\",\n  \"firstName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"email\": \"<string>\",\n  \"password\": \"<string>\",\n  \"phone\": \"<string>\",\n  \"userStatus\": \"<integer>\"\n}"
 								},
 								{
+									"id": "28f6da45-fa0a-475d-934d-9bf803736576",
 									"name": "Invalid username supplied",
 									"originalRequest": {
 										"method": "GET",
@@ -1731,6 +1828,7 @@
 									"body": ""
 								},
 								{
+									"id": "0443390a-0d18-409d-8cd0-eabbbea7bdbe",
 									"name": "User not found",
 									"originalRequest": {
 										"method": "GET",
@@ -1760,13 +1858,18 @@
 								}
 							]
 						}
-					]
+					],
+					"id": "525cfbe2-e6cb-4841-95c5-703cc107cb33"
 				},
 				{
 					"name": "Update user",
 					"item": [
 						{
 							"name": "Update user",
+							"id": "e0482e8d-9b9d-44c0-b2c5-08715168d5fe",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
 							"request": {
 								"auth": {
 									"type": "inherit"
@@ -1809,6 +1912,7 @@
 							},
 							"response": [
 								{
+									"id": "38bb58e1-1cad-4feb-b5ae-40f2b10a0e45",
 									"name": "successful operation",
 									"originalRequest": {
 										"method": "PUT",
@@ -1853,13 +1957,18 @@
 								}
 							]
 						}
-					]
+					],
+					"id": "19b39348-dd03-4c9d-8b6a-483b8ce0eea6"
 				},
 				{
 					"name": "Delete user",
 					"item": [
 						{
 							"name": "Delete user",
+							"id": "8d9ceca9-4694-4d1d-bf4b-4cbcd960aaf8",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
 							"request": {
 								"auth": {
 									"type": "inherit"
@@ -1887,6 +1996,7 @@
 							},
 							"response": [
 								{
+									"id": "10be5e21-9386-4177-9901-0ba65b804d62",
 									"name": "Invalid username supplied",
 									"originalRequest": {
 										"method": "DELETE",
@@ -1915,6 +2025,7 @@
 									"body": ""
 								},
 								{
+									"id": "9c6e5eee-8779-4a33-89ff-1f29afc66fd5",
 									"name": "User not found",
 									"originalRequest": {
 										"method": "DELETE",
@@ -1944,13 +2055,18 @@
 								}
 							]
 						}
-					]
+					],
+					"id": "bc8d017e-5734-489d-b6fe-542b0e3148e1"
 				},
 				{
 					"name": "Create user",
 					"item": [
 						{
 							"name": "Create user",
+							"id": "3a472997-d80c-478e-be94-e312e8f7bcc7",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
 							"request": {
 								"auth": {
 									"type": "inherit"
@@ -1991,6 +2107,7 @@
 							},
 							"response": [
 								{
+									"id": "babf66f2-b53c-42af-94cb-a038dd372ebe",
 									"name": "successful operation",
 									"originalRequest": {
 										"method": "POST",
@@ -2038,18 +2155,22 @@
 								}
 							]
 						}
-					]
+					],
+					"id": "27324dcc-8c78-4ab0-a826-cda5d55b6ba3"
 				}
-			]
+			],
+			"id": "1dc957d7-17ed-441e-9d24-d1779e2a4bb3"
 		}
 	],
 	"variable": [
 		{
+			"id": "9ab4e542-b91e-4202-9774-9f7a135bf052",
 			"key": "servicePath",
 			"value": "",
 			"type": "string"
 		},
 		{
+			"id": "969798d0-4545-4dcb-b276-6b121cf358e8",
 			"key": "serviceName",
 			"value": "",
 			"type": "string"
